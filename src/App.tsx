@@ -1,9 +1,14 @@
 import React from 'react';
 
-function App() {
+import Routes from './routes';
+import AppProvider from './hooks';
+
+const App: React.FC = () => {
   return (
-    <div />
+    <AppProvider>
+      <Routes />
+    </AppProvider>
   );
-}
+};
 
 export default App;

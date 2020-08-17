@@ -34,6 +34,7 @@ export const Content = styled.div`
       font-family: 'Archivo';
       font-weight: bold;
       font-size: 6rem;
+      text-align: center;
       color: ${props => props.theme.colors.titleInPrimary};
       margin-bottom: 2.4rem;
     }
@@ -47,12 +48,15 @@ export const Content = styled.div`
     }
   }
 
+  a {
+    margin-bottom: 6rem;
+  }
+
   a button {
     border: 0;
     border-radius: 1rem;
     height: 6rem;
     width: 20rem;
-    margin-bottom: 6rem;
     color: ${props => props.theme.colors.buttonText};
     background-color: ${props => props.theme.colors.secondary};
     transition: background-color 0.2s;

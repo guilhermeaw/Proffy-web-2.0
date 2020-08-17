@@ -42,6 +42,7 @@
     "import/no-duplicates": "off",
     "@typescript-eslint/camelcase": "off",
     "linebreak-style": "off",
+    "jsx-a11y/label-has-associated-control": "off",
     "@typescript-eslint/explicit-function-return-type": [
       "error",
       {

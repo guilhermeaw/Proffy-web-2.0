@@ -9,10 +9,16 @@ export default createGlobalStyle`
   }
 
   body {
-    background: #312e38;
-    color: ${props => props.theme.colors.background};
+    background: ${props => props.theme.colors.background};
     -webkit-font-smoothing: antialiased;
   }
+
+  html, body {
+  height: 100vh;
+  width: 100vw;
+
+  font-size: 60%;
+}
 
   body, input, button, textarea {
     font: 500 16px Poppins;

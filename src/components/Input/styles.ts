@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   position: relative;
+  transition: 0.2s all;
 
   input {
     width: 100%;

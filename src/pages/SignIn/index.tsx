@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import Input from '../../components/Input';
+
 import {
   Container,
   BackgroundContainer,
@@ -13,6 +15,7 @@ import {
 } from './styles';
 
 import logoImg from '../../assets/images/logo.svg';
+import heartIcon from '../../assets/images/icons/purple-heart.svg';
 
 const SignIn: React.FC = () => {
   return (
@@ -28,8 +31,8 @@ const SignIn: React.FC = () => {
         <LoginContainer>
           <form>
             <h1>Fazer login</h1>
-            <input placeholder="E-mail" />
-            <input placeholder="Senha" />
+            <Input placeholder="E-mail" name="email" />
+            <Input placeholder="Senha" name="password" />
 
             <PasswordActionsContainer>
               <div>
@@ -49,6 +52,7 @@ const SignIn: React.FC = () => {
             </RegisterContainer>
             <div>
               <span>É de graça</span>
+              <img src={heartIcon} alt="heart" />
             </div>
           </LoginFooter>
         </LoginContainer>

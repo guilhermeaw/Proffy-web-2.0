@@ -65,11 +65,6 @@ export const LoginContainer = styled.div`
       color: ${props => props.theme.colors.textTitle};
     }
 
-    input {
-      padding: 2rem;
-      border: 1px solid ${props => props.theme.colors.lineInWhite};
-    }
-
     button {
       margin-top: 3.8rem;
       border: 0;
@@ -95,7 +90,7 @@ export const PasswordActionsContainer = styled.div`
   color: ${props => props.theme.colors.textComplement};
   margin-top: 1.8rem;
 
-  input {
+  div input {
     margin-right: 0.8rem;
   }
 
@@ -109,6 +104,10 @@ export const LoginFooter = styled.footer`
   display: flex;
   justify-content: space-between;
   margin-top: 4rem;
+
+  div span {
+    margin-right: 0.8rem;
+  }
 `;
 
 export const RegisterContainer = styled.div`

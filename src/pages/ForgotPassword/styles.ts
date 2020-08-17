@@ -20,7 +20,7 @@ export const Content = styled.main`
   justify-content: center;
 `;
 
-export const RegisterContainer = styled.div`
+export const ForgotContainer = styled.div`
   position: relative;
   flex: 1;
   display: flex;
@@ -46,7 +46,6 @@ export const RegisterContainer = styled.div`
     }
 
     span {
-      width: 22rem;
       font-size: 1.6rem;
       line-height: 2.6rem;
       margin-bottom: 3.2rem;

@@ -6,7 +6,7 @@ import Input from '../../components/Input';
 import {
   Container,
   Content,
-  RegisterContainer,
+  ForgotContainer,
   BackgroundContainer,
   Background,
 } from './styles';
@@ -18,7 +18,7 @@ const ForgotPassword: React.FC = () => {
   return (
     <Container>
       <Content>
-        <RegisterContainer>
+        <ForgotContainer>
           <Link to="/">
             <img src={backIcon} alt="back" />
           </Link>
@@ -33,7 +33,7 @@ const ForgotPassword: React.FC = () => {
 
             <button type="submit">Enviar</button>
           </form>
-        </RegisterContainer>
+        </ForgotContainer>
       </Content>
 
       <BackgroundContainer>

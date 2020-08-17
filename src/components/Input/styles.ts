@@ -5,6 +5,7 @@ export const Container = styled.div`
 
   input {
     width: 100%;
+    border-radius: 0.8rem;
     padding: 2rem;
     border: 1px solid ${props => props.theme.colors.lineInWhite};
   }

@@ -31,8 +31,8 @@ const SignIn: React.FC = () => {
         <LoginContainer>
           <form>
             <h1>Fazer login</h1>
-            <Input placeholder="E-mail" name="email" />
-            <Input placeholder="Senha" name="password" />
+            <Input placeholder="E-mail" name="email" type="email" />
+            <Input placeholder="Senha" name="password" type="password" />
 
             <PasswordActionsContainer>
               <div>

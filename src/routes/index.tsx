@@ -6,6 +6,7 @@ import SignUp from '../pages/SignUp';
 import RegisterFinish from '../pages/RegisterFinish';
 import ForgotPassword from '../pages/ForgotPassword';
 import PasswordRedefinitionFinished from '../pages/PasswordRedefinitionFinished';
+import Home from '../pages/Home';
 
 const Routes: React.FC = () => {
   return (
@@ -18,6 +19,7 @@ const Routes: React.FC = () => {
         path="/redefinition-finished"
         component={PasswordRedefinitionFinished}
       />
+      <Route path="/home" component={Home} />
     </Switch>
   );
 };

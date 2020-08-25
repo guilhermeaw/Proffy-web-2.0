@@ -1,6 +1,13 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+  label {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+  }
+`;
+
+export const InputWrapper = styled.div`
   position: relative;
   transition: 0.2s all;
 
@@ -13,7 +20,7 @@ export const Container = styled.div`
 
   &:focus-within::after {
     width: 2px;
-    height: calc(100% - 3.2rem);
+    height: 50%;
     content: '';
     background-color: ${props => props.theme.colors.primaryLight};
     position: absolute;

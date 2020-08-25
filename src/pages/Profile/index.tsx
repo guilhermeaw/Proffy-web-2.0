@@ -7,10 +7,16 @@ import {
   AvatarContainer,
   Content,
   CustomInput,
-  FlexRow,
+  NameWrapper,
+  ContactWrapper,
+  ClassWrapper,
+  ScheduleWrapper,
+  FormFooter,
+  FooterTextWrapper,
 } from './styles';
 
 import photoIcon from '../../assets/images/icons/photo.svg';
+import warningIcon from '../../assets/images/icons/warning.svg';
 
 const Profile: React.FC = () => {
   return (
@@ -36,28 +42,46 @@ const Profile: React.FC = () => {
         <form action="">
           <fieldset>
             <legend>Seus dados</legend>
-            <FlexRow>
+            <NameWrapper>
               <CustomInput name="name" label="Nome" />
               <CustomInput name="lastname" label="Sobrenome" />
-            </FlexRow>
+            </NameWrapper>
 
-            <FlexRow>
+            <ContactWrapper>
               <CustomInput name="email" label="E-mail" />
               <CustomInput name="whatsapp" label="Whatsapp" />
-            </FlexRow>
+            </ContactWrapper>
 
-            <FlexRow>
-              <CustomInput name="bio" label="Biografia" />
-            </FlexRow>
+            <CustomInput name="bio" label="Biografia" />
           </fieldset>
 
           <fieldset>
             <legend>Sobre a aula</legend>
-            <FlexRow>
-              <CustomInput name="name" label="Matéria" />
-              <CustomInput name="lastname" label="Sobrenome" />
-            </FlexRow>
+            <ClassWrapper>
+              <CustomInput name="subject" label="Matéria" />
+              <CustomInput name="cost" label="Custo da sua hora por aula" />
+            </ClassWrapper>
           </fieldset>
+
+          <fieldset>
+            <legend>Horários disponíveis</legend>
+            <ScheduleWrapper>
+              <CustomInput name="weekDay" label="Dia da semana" />
+              <CustomInput name="from" label="Das" />
+              <CustomInput name="to" label="Até" />
+            </ScheduleWrapper>
+          </fieldset>
+
+          <FormFooter>
+            <div>
+              <img src={warningIcon} alt="warning" />
+              <FooterTextWrapper>
+                <strong>Importante!</strong>
+                <span>Preencha todos os dados corretamente.</span>
+              </FooterTextWrapper>
+            </div>
+            <button type="submit">Salvar cadastro</button>
+          </FormFooter>
         </form>
       </Content>
     </Container>

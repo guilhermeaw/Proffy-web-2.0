@@ -36,6 +36,11 @@ export const AvatarContainer = styled.div`
       display: flex;
       justify-content: center;
       align-items: center;
+      transition: background-color 0.2s;
+
+      &:hover {
+        background-color: ${props => props.theme.colors.secondaryDark};
+      }
 
       img {
         width: 2rem;
@@ -55,13 +60,15 @@ export const AvatarContainer = styled.div`
 `;
 
 export const Content = styled.main`
-  padding: 4rem 10rem;
-  margin: -5.6rem 0 4rem;
+  padding: 5.6rem 0 0;
+  margin: -5.6rem 0 5.6rem;
   background-color: ${props => props.theme.colors.titleInPrimary};
   border-radius: 0.8rem;
+  max-width: 700px;
 
   form {
     fieldset {
+      padding: 0 5.6rem;
       border: 0;
       margin-bottom: 5.6rem;
 
@@ -91,12 +98,77 @@ export const CustomInput = styled(Input)`
   background-color: ${props => props.theme.colors.background};
 `;
 
-export const FlexRow = styled.div`
+export const NameWrapper = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 2.4rem;
+  margin-bottom: 1.6rem;
+`;
+
+export const ContactWrapper = styled.div`
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-column-gap: 2.4rem;
+  margin-bottom: 1.6rem;
+`;
+
+export const ClassWrapper = styled.div`
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-column-gap: 2.4rem;
+`;
+
+export const ScheduleWrapper = styled.div`
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+  grid-column-gap: 1.6rem;
+`;
+
+export const FormFooter = styled.footer`
+  background-color: ${props => props.theme.colors.boxFooter};
+  padding: 5.6rem 5.6rem;
+  border-top: 1px solid ${props => props.theme.colors.lineInWhite};
+  border-radius: 0 0 0.8rem 0.8rem;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  & + & {
-    margin-top: 1.6rem;
+  > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  button {
+    border: 0;
+    border-radius: 1rem;
+    height: 6rem;
+    width: 20rem;
+    color: ${props => props.theme.colors.buttonText};
+    background-color: ${props => props.theme.colors.secondary};
+    transition: background-color 0.2s;
+
+    &:hover {
+      background-color: ${props => props.theme.colors.secondaryDark};
+    }
+  }
+`;
+
+export const FooterTextWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  margin-left: 1.6rem;
+
+  strong {
+    color: ${props => props.theme.colors.primary};
+    font-size: 1.4rem;
+  }
+
+  span {
+    color: ${props => props.theme.colors.textComplement};
+    font-size: 1.4rem;
   }
 `;

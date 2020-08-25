@@ -28,7 +28,6 @@ export const HeaderTop = styled.header`
 export const HeaderContent = styled.div<HeaderContentProps>`
   background: ${({ showBackground }) =>
     showBackground && `url(${backgroundImg}) no-repeat center`};
-  background-size: contain;
   background-color: ${props => props.theme.colors.primary};
 
   padding: ${({ size }) =>
